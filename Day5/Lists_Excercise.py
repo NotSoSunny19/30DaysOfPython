@@ -32,3 +32,77 @@ print(len(it_companies))
 # Print the first, middle and last company
 print(it_companies[0:7:3])
 
+# Print the list after modifying one of the companies
+it_companies[0] = 'Capgemini'
+print(it_companies)
+
+# Add an IT company to it_companies
+it_companies.insert(0,'Facebook')
+print(it_companies)
+
+# Change one of the it_companies names to uppercase
+UCIT = it_companies[2].upper()
+print(UCIT)
+
+# Join the it_companies with a string '#;  '
+StringToBeJoined = ['#;  ']
+it_companies = it_companies + StringToBeJoined
+print(it_companies)
+
+# Check if a certain company exists in the it_companies list.
+Does_exists = 'Capgemini' in it_companies
+print(Does_exists) 
+
+# Sort the list using sort() method
+it_companies.sort()
+print(it_companies)
+
+# Reverse the list in descending order using reverse() method
+it_companies.sort(reverse=True)
+print(it_companies)
+
+# Slice out the first 3 companies from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+del it_companies[0:3]
+print(it_companies)
+
+# Slice out the last 3 companies from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies.pop()
+it_companies.pop()
+it_companies.pop()
+print(it_companies)
+
+# Slice out the middle IT company or companies from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies.pop(2)
+print(it_companies)
+it_companies.pop(2)
+print(it_companies)
+it_companies.pop(2)
+print(it_companies)
+
+# Remove the first IT company from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies.pop(0)
+print(it_companies)
+
+# Remove all IT companies from the list
+del it_companies[0:6]
+print(it_companies)
+
+# Destroy the IT companies list
+it_companies.clear()
+print(it_companies)
+
+# Join the following lists:
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+full_stack = front_end + back_end
+print(full_stack)
+
+# After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack. Then insert Python and SQL after Redux.
+full_stack.insert(full_stack.index('Redux')+1,'Python')
+full_stack.insert(full_stack.index('Python')+1,'SQL')
+print(full_stack)
+
