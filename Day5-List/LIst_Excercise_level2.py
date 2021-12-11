@@ -11,7 +11,7 @@ print(ages)
 
 # Find the median age (one middle item or two middle items divided by two)
 ages.sort()
-if(len(ages) % 2 == 0 ):
+if(len(ages) % 2 == 1 ):
     MidElement = ages[int(len(ages)/2)]
 else:
     MidElement = ages[int((len(ages)-1)/2)]+ages[int((len(ages)+1)/2)]    
@@ -229,7 +229,7 @@ countries = [
 ]
 
 
-if(len(countries) % 2 == 0 ):
+if(len(countries) % 2 == 1 ):
     MidElement = countries[int(len(countries)/2)]
     print(MidElement)
 else:
@@ -239,7 +239,7 @@ else:
     print(MidElement2)
 
 # Divide the countries list into two equal lists if it is even if not one more country for the first half.
-if(len(countries) % 2 == 0 ):
+if(len(countries) % 2 == 1 ):
     MidIndex = int(len(countries)/2)
     FirstHalf = countries[:MidIndex]
     SecondHalf = countries[MidIndex:]
