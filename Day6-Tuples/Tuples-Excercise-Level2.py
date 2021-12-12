@@ -42,7 +42,7 @@ vegetable_products = ('Manchuria', 'Gajar ka Halwa', 'vegetable Oil')
 animal_products = ('Shawarma', 'Butter', 'Milk')
 food_stuff_tp = fruits_products+vegetable_products+animal_products
 del food_stuff_tp 
-print(food_stuff_tp)
+# print(food_stuff_tp)
 
 # Check if an item exists in tuple:
 # Check if 'Estonia' is a nordic country
