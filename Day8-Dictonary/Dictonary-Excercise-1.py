@@ -49,4 +49,4 @@ print(student)
 
 # Delete one of the dictionaries
 del dog
-# print(dog)
+print(dog)
