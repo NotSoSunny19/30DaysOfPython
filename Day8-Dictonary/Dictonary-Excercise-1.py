@@ -48,5 +48,5 @@ student.pop('first_name')
 print(student)
 
 # Delete one of the dictionaries
-del dogs
-print(dog)
+del dog
+# print(dog)
